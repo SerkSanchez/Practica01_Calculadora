@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!-- Layout superior donde introducir las operaciones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/etiquetaAddNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:layout_weight="0.70"
+            android:hint="0"
+            android:gravity="right|center_vertical"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/etiquetaShowNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="right|center_vertical"
+            android:layout_weight="0.30"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <!-- Layout de la parte inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!-- Layout para la parte de números -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:background="@color/colorOperations"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/btnResto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorOperations"
+                    android:text="%"
+                    android:textSize="40sp"/>
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorOperations"
+                    android:text="AC"
+                    android:textSize="40sp"/>
+
+                <Button
+                    android:id="@+id/btnDel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorOperations"
+                    android:text="DEL"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="7"
+                    android:textSize="40sp"/>
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="8"
+                    android:textSize="40sp"/>
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="9"
+                    android:textSize="40sp"/>
+            </LinearLayout>
+
+            <!-- Layout para números 4, 5 y 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="4"
+                    android:textSize="40sp"/>
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="5"
+                    android:textSize="40sp"/>
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="6"
+                    android:textSize="40sp"/>
+
+            </LinearLayout>
+
+            <!-- Layout para números 1, 2 y 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="1"
+                    android:textSize="40sp"/>
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="2"
+                    android:textSize="40sp"/>
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="3"
+                    android:textSize="40sp"/>
+            </LinearLayout>
+
+            <!-- Layout para números 0 y = -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.66"
+                    android:background="@color/colorNumbers"
+                    android:text="0"
+                    android:textSize="40sp"/>
+
+                <Button
+                    android:id="@+id/btnPunto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:background="@color/colorNumbers"
+                    android:text="."
+                    android:textSize="40sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Layout para la parte de operaciones -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:background="@color/colorOperations"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:background="@color/colorOperations"
+                android:text="/"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnMulti"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:background="@color/colorOperations"
+                android:text="*"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnResta"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:background="@color/colorOperations"
+                android:text="-"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btnSuma"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:background="@color/colorOperations"
+                android:text="+"
+                android:textSize="40sp" />
+            <Button
+                android:id="@+id/btnResultado"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@color/colorOperations"
+                android:text="="
+                android:textSize="40sp"/>
+        </LinearLayout>
+
+        <!-- Layout para la esquina verde -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@color/colorGreen" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
